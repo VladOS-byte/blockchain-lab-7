@@ -1,14 +1,14 @@
-# Lab-6
+# Lab-7
 ## Description
 
 Use python>=3.7 for run. Load crc, numpy, pandas libraries. 
 At first program sum bytes of name and parameter, use CRC256 for hashing, mod numtickets.
 
 ## Usage
-python3 lab6.py \<file> \<numtickets> \<parameter>
+python3 lab7.py \<file> \<numtickets> \<parameter>
 ```
 cd notes
-python3 lab6.py "../input/input.csv" 100 41
+python3 lab7.py "../input/input.csv" 100 41
 ```
 
 ## Input
