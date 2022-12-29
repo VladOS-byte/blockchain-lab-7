@@ -25,7 +25,7 @@ calculator = Calculator(config)
 
 data['crc'] = data[0].map(lambda x: calculator.checksum(bytes(map(lambda y: y + par, x.encode('utf-8')))))
 
-data['ticket'] = data['crc'].map(lambda x: x % numticket)
+data['ticket'] = data['crc'].map(lambda x: (x % numticket) + 1)
 
 for i in range(len(data)):
     print(str(data[0][i]) + ': ' + str(data['ticket'][i]))
